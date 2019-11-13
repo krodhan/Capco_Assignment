@@ -11,7 +11,8 @@ If number of columns exceed the size of the table body, a horizontal scrollbar s
 Each row should contain a button which shall submit the row ID and row status to /api/submit as a POST request – You are not expected to create the POST endpoint, but you can mock one if you like
 
 
-Steps to run the application
+Steps to run the application:
+
 Clone and checkout the code
 Install Node and npm in your system
 npm install in Terminal or CLI
