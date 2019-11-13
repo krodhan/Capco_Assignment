@@ -1,0 +1,63 @@
+
+<div class="flex-container">
+    <div >
+        <span>Number Of Rows you want to display = </span><input [(ngModel)]="controlRow">
+      <table> 
+       <thead>
+        <tr >
+          <th style="width: 27px;font-size: 12px;">Id</th>
+          <th style="width: 72px;font-size: 12px;">Name</th>
+          <th style="width: 20px;font-size: 12px;">Phone</th>
+          <th style="width: 350px;font-size: 12px;">Email</th>
+          <th style="width: 92px;font-size: 12px;">Address</th>
+          <th style="width: 103px;font-size: 12px;">City</th>
+          <th style="width: 100px;font-size: 12px;">Company</th>
+          <th style="width: 63px;font-size: 12px;">Date Entry</th>
+          <th style="width: 63px;font-size: 12px;">Date Exit</th>
+          <th style="width: 63px;font-size: 12px;">Date First</th>
+          <th style="width: 63px;font-size: 12px;">Date Recent</th>
+          <th style="width: 49px;font-size: 12px;">fee</th>
+          <th style="width: 81px;font-size: 12px;">geo</th>
+          <th style="width: 128px;font-size: 12px;">guid</th>
+          <th style="width: 54px;font-size: 12px;">Org Num</th>
+          <th style="width: 143px;font-size: 12px;">pan</th>
+          <th style="width: 147px;font-size: 12px;">status</th>
+          <th style="width: 130px;font-size: 12px;">url</th>
+          <th style="width: 40px;font-size: 12px;">zip</th>
+        </tr>
+      </thead>
+      <tbody >
+        <tr *ngFor="let sampleData of sampleData;let i=index"  (click)="getManType(sampleData)">
+          <td *ngIf="i<controlRow">{{sampleData.id}}</td>
+          <td *ngIf="i<controlRow">{{sampleData.name}}</td>
+          <td *ngIf="i<controlRow">{{sampleData.phone}}</td>
+          <td *ngIf="i<controlRow">{{sampleData.email}}</td>
+          <td *ngIf="i<controlRow">{{sampleData.address_1}}</td>
+          <td *ngIf="i<controlRow">{{sampleData.city}}</td>
+          <td *ngIf="i<controlRow">{{sampleData.company}}</td>
+          <td *ngIf="i<controlRow">{{sampleData.date_entry}}</td>
+          <td *ngIf="i<controlRow">{{sampleData.date_exit}}</td>
+          <td *ngIf="i<controlRow">{{sampleData.date_first}}</td>
+          <td *ngIf="i<controlRow">{{sampleData.date_recent}}</td>
+          <td *ngIf="i<controlRow">{{sampleData.fee}}</td>
+          <td *ngIf="i<controlRow">{{sampleData.geo}}</td>
+          <td *ngIf="i<controlRow">{{sampleData.guid}}</td>
+          <td *ngIf="i<controlRow">{{sampleData.org_num}}</td>
+          <td *ngIf="i<controlRow">{{sampleData.pan}}</td>
+          <td *ngIf="i<controlRow">{{sampleData.phone}}</td>
+          <td *ngIf="i<controlRow">{{sampleData.pin}}</td>
+          <td *ngIf="i<controlRow">{{sampleData.status}}</td>
+          <td *ngIf="i<controlRow">{{sampleData.url}}</td>
+          <td *ngIf="i<controlRow">{{sampleData.zip}}</td>
+        </tr>
+      </tbody>
+      <tfoot>
+          <tr>
+            <td>Selected Number of Rows to display = {{controlRow}}</td>
+          </tr>
+        </tfoot>
+      </table>
+    </div>
+   
+    
+  </div>
